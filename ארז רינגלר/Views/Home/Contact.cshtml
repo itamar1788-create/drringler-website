@@ -1,0 +1,53 @@
+﻿
+@{
+	ViewData["Title"] = "צרו קשר";
+}
+<section class="contact-page">
+	<div class="contact-wrapper">
+		<div class="contact-info">
+		<div class="info-item">
+         <i class="fa-solid fa-location-dot"></i>
+		 <div>
+			 <strong>כתובת</strong>
+			 <p>בניין משרדים, קניון רמת אביב</p>
+		 </div>
+			</div>
+			<div class="info-item">
+				<i class="fa-solid fa-envelope"></i>
+				<div>
+					<storng>אימייל</storng>
+					<p>erezringler@gmail.com</p>
+				</div>
+			</div>
+			<div class="info-item">
+				<i class="fa-solid fa-clock"></i>
+				<div>
+					<strong>שעות קבלה</strong>
+					<p>רביעי 14:30-20:00</p>
+				</div>
+			</div>
+		</div>
+		<div class="contact-form">
+			<h1>צרו קשר</h1>
+				<form>
+					<div class="form-group">
+						<label for="name">שם מלא</label>
+						<input type="text" id="name" name="name" placeholder=" שם מלא" />
+					</div>
+					<div class="form-group">
+						<label for="phone">טלפון</label>
+						<input type="tel" id="phone" name="phone" placeholder=" מספר טלפון" />
+					</div>
+					<div class="form-group">
+						<label for="email">אימייל</label>
+						<input type="email" id="email" name="email" placeholder=" כתובת אימייל" />
+					</div>
+					<div class="form-group">
+						<label for="message">נושא הפנייה</label>
+						<textarea id="message" name="message" rows="5" placeholder="נושא הפנייה"></textarea>
+					</div>
+					<button type="submit">שליחת בקשה לייעוץ</button>
+				</form>
+		</div>
+	</div>
+</section>

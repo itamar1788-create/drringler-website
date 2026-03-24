@@ -1,0 +1,67 @@
+﻿
+@{
+	ViewData["Title"] = "אודות";
+}
+<section class="about-banner">
+	<div class="about-banner-inner">
+		<div class="about-banner-text">
+		<p>דוקטור ארז רינגלר עוסק בשיקום נירולוגי ואוטופדי ומתנדב בוועד הפראלימפי
+			ובעמותה לנפגעי חוט השדרה בישראל. עבר השתלמויות רבות, ובהן
+			בתחום רפואת השריר-שלד והכאב, פרוטולוגיה והזרקות תחת
+			 אולטרסאונד, דיקור יבש, קינזיוטייפינג ורכבות אנטומיות.  
+		 </p>
+		</div>
+	</div>
+	<section class="experience-section"></section>
+		<div class="carousel-wrapper">
+			<button class="carousel-btn" onclick="scrollCarousel(-1)">&#8249;</button>
+			<div class="carousel-track" id="carouselTrack">
+            <div class="exp-card">
+                <img src="~/images/tec.jpg" alt="טכניון" />
+                 <div class="exp-card-years">1994-2001</div>
+                <div class="exp-card-title">לימודי רפואה, הטכניון, חיפה</div>
+            </div>
+
+            <div class="exp-card">
+                <img src="~/images/sheba.png" />
+                <div class="exp-card-years">2009-2016</div>
+                <div class="exp-card-title">התמחות ברפואה פיזיקלית ושיקום,<br /> מרכז שיבא, תל השומר</div>
+            </div>
+
+            <div class="exp-card">
+                <img src="~/images/tlvu.png" /> 
+                <div class="exp-card-years">2014-2016</div>
+                <div class="exp-card-title">לימודי רפואת ספורט, אוניברסיטת תל אביב</div>
+            </div>
+
+            <div class="exp-card">
+                <img src="~/images/bgu.png" />
+                <div class="exp-card-years">2016–2017</div>
+                <div class="exp-card-title">מרצה לסטודנטים לרפואה, אוניברסיטת בן גוריון</div>
+            </div>
+
+            <div class="exp-card">
+                <img src="~/images/sheba.png" alt="שיבא" />
+                <div class="exp-card-years">2016-2018</div>
+                <div class="exp-card-title">רופא במרפאת פרקינסון והפרעות תנועה,<br /> המרכז הרפואי שיבא, תל השומר</div>
+            </div>
+
+            <div class="exp-card">
+                <img src="~/images/idf.jpg" alt="צה״ל" />
+                <div class="exp-card-years">2002-2021</div>
+                <div class="exp-card-title">רופא שיקום בצה"ל (בשטח ובמטה) ניסיון אקדמי</div>
+            </div>
+	</div>
+        <button class="carousel-btn" onclick="scrollCarousel(1)">&#8250;</button>
+	</div>
+</section>
+@section Scripts {
+    <script>
+        function scrollCarousel(direction) {
+            const track = document.getElementById('carouselTrack');
+            track.scrollBy({ left: direction * -220, behavior: 'smooth' });
+        }
+    </script>
+
+}
+
